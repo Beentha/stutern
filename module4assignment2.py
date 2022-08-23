@@ -7,16 +7,16 @@ print("Database successfully created")
 cursor = conn.cursor()
 print("Cursor created successfully")
 
-# cursor.execute(
-#     """
-#     CREATE TABLE learners(
-#         first_name text,
-#         last_name text,
-#         email text,
-#         phone_number text
-#     )
-#     """)
-# print("Table successfully created")
+cursor.execute(
+    """
+    CREATE TABLE learners(
+        first_name text,
+        last_name text,
+        email text,
+        phone_number text
+    )
+    """)
+print("Table successfully created")
 
 learners_list = [('Esther', 'Akpanowo', 'estherakpanowo@stutern.com', '09077546691'),
                 ('Eke', 'Ihuoma', 'ekeihuoma@stutern.com', '09067547795'),
